@@ -1,0 +1,80 @@
+:root {
+    --clr-primary-green: hsl(75, 94%, 57%);
+    --clr-neutral-white: hsl(0, 0%, 100%);
+    --clr-neutral-darkgrey: hsl(0, 0%, 12%);
+    --clr-neutral-offblack: hsl(0, 0%, 8%);
+    --clr-neutral-grey: hsl(0, 0%, 20%);
+}
+
+
+body {
+    color: var(--clr-neutral-grey);
+    font-family: "Inter", sans-serif;
+    margin: 0;
+    background-color: var(--clr-neutral-offblack);
+    font-size: 14px;
+    
+    display: grid;
+    min-height: 100vh;
+    place-content: center;
+}
+
+
+.main {
+    background-color: var(--clr-neutral-darkgrey);
+    place-content: center; 
+    color: var(--clr-neutral-white);
+    max-width: 320px;
+    text-align: center;
+    border-radius: 1rem;
+}
+
+.wrapper {
+    padding: 1.5rem;
+}
+
+.image img {
+    border-radius: 50%;
+    width: 90px;
+    margin-bottom: 10px;
+}
+
+
+.title h1 {
+    font-weight: 400;
+    font-size: 20px;
+}
+
+
+.title h2 {
+    font-weight: 600;
+    color: var(--clr-primary-green);
+    font-size: 12px;
+    margin-top: -5px;
+}
+
+
+.second-title p {
+    color: var(--clr-neutral-white);
+    font-size: 11px;
+    padding: 8px;
+    font-weight: 300;
+}
+
+
+.buttons {
+    display: grid;
+    gap: 1rem;
+}
+
+
+button {
+    font-family: inherit;
+    font-weight: 500;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    border: 0cap;
+    background-color: var(--clr-neutral-grey);
+    color: var(--clr-neutral-white);
+    font-size: 0.8rem;
+}
