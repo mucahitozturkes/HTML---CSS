@@ -13,8 +13,7 @@ body {
     margin: 0;
     background-color: var(--clr-neutral-offblack);
     font-size: 14px;
-    
-    display: grid;
+   
     min-height: 100vh;
     place-content: center;
 }
@@ -22,15 +21,17 @@ body {
 
 .main {
     background-color: var(--clr-neutral-darkgrey);
-    place-content: center; 
     color: var(--clr-neutral-white);
     max-width: 320px;
     text-align: center;
     border-radius: 1rem;
+    margin: 0 auto;
 }
 
+
 .wrapper {
-    padding: 1.5rem;
+   padding: 25px;
+ 
 }
 
 .image img {
@@ -67,6 +68,11 @@ body {
     gap: 1rem;
 }
 
+button:hover {
+color: black;
+background-color: var(--clr-primary-green);
+}
+
 
 button {
     font-family: inherit;
@@ -78,3 +84,10 @@ button {
     color: var(--clr-neutral-white);
     font-size: 0.8rem;
 }
+
+
+@media (min-width: 800px) {
+    .main {
+      max-width: 380px;
+    }
+} 
